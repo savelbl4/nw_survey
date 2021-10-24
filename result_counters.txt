@@ -1,0 +1,612 @@
+*A:ydx-vla-z1# environment no more 
+*A:ydx-vla-z1# environment more false
+                                ^
+Error: Invalid parameter. 
+*A:ydx-vla-z1# show version 
+TiMOS-B-21.7.R2 both/hops64 Nokia 7750 SR Copyright (c) 2000-2021 Nokia.
+All rights reserved. All use subject to applicable license agreements.
+Built on Wed Sep 15 12:57:16 PDT 2021 by builder in /builds/c/217B/R2/panos/main/sros
+*A:ydx-vla-z1# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+LSP Name         : strict_SR-10_SR-38_1
+Aggregate Pkts   : 1743                 Aggregate Octets : 173434
+LSP Name         : strict_SR-10_SR-38_2
+LSP Name         : strict_SR-10_SR-38_3
+LSP Name         : strict_SR-10_SR-38_4
+LSP Name         : strict_SR-10_SR-38_5
+LSP Name         : strict_SR-10_SR-38_6
+LSP Name         : strict_SR-10_SR-38_7
+LSP Name         : strict_SR-10_SR-38_8
+LSP Name         : strict_SR-10_SR-38_9
+Aggregate Pkts   : 1392                 Aggregate Octets : 132016
+LSP Name         : strict_SR-10_SR-38_10
+LSP Name         : strict_SR-10_SR-38_11
+LSP Name         : strict_SR-10_SR-38_12
+LSP Name         : strict_SR-10_SR-38_13
+LSP Name         : strict_SR-10_SR-38_14
+LSP Name         : strict_SR-10_SR-38_15
+LSP Name         : strict_SR-10_SR-38_16
+LSP Name         : strict_SR-10_SR-38_17
+LSP Name         : strict_SR-10_SR-38_18
+LSP Name         : strict_SR-10_SR-38_19
+LSP Name         : strict_SR-10_SR-38_20
+LSP Name         : strict_SR-10_SR-38_21
+LSP Name         : strict_SR-10_SR-38_22
+LSP Name         : strict_SR-10_SR-38_23
+LSP Name         : strict_SR-10_SR-38_24
+*A:ydx-vla-z1# show filter ip 1 counters | match Ing 
+Ing. Matches        : 0 pkts
+*A:ydx-vla-z1# show router interface "to_SR-10-1" statistics | match "Mpls"
+MINOR: CLI No such interface: to_SR-10-1.
+*A:ydx-vla-z1# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-18# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-18# environment more false
+
+[/]
+A:admin@SR-18# show version
+
+[/]
+A:admin@SR-18# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-18# show filter ip 1 counters | match Ing
+Ing. Matches        : 0 pkts
+
+[/]
+A:admin@SR-18# show router interface "to_SR-10-1" statistics | match "Mpls"
+Mpls Rx Pkts     : 316100               Mpls Rx Bytes     : 67687952
+Mpls Tx Pkts     : 0                    Mpls Tx Bytes     : 0
+
+[/]
+A:admin@SR-18# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-19# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-19# environment more false
+
+[/]
+A:admin@SR-19# show version
+
+[/]
+A:admin@SR-19# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-19# show filter ip 1 counters | match Ing
+Ing. Matches        : 0 pkts
+
+[/]
+A:admin@SR-19# show router interface "to_SR-10-1" statistics | match "Mpls"
+Mpls Rx Pkts     : 318081               Mpls Rx Bytes     : 68705140
+Mpls Tx Pkts     : 0                    Mpls Tx Bytes     : 0
+
+[/]
+A:admin@SR-19# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-38# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-38# environment more false
+
+[/]
+A:admin@SR-38# show version
+
+[/]
+A:admin@SR-38# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-38# show filter ip 1 counters | match Ing
+Ing. Matches        : 0 pkts
+
+[/]
+A:admin@SR-38# show router interface "to_SR-10-1" statistics | match "Mpls"
+MINOR: CLI #2005: Error while processing command - No such interface: to_SR-10-1.
+
+[/]
+A:admin@SR-38# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-39# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-39# environment more false
+
+[/]
+A:admin@SR-39# show version
+
+[/]
+A:admin@SR-39# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-39# show filter ip 1 counters | match Ing
+Ing. Matches        : 0 pkts
+
+[/]
+A:admin@SR-39# show router interface "to_SR-10-1" statistics | match "Mpls"
+MINOR: CLI #2005: Error while processing command - No such interface: to_SR-10-1.
+
+[/]
+A:admin@SR-39# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-30# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-30# environment more false
+
+[/]
+A:admin@SR-30# show version
+
+[/]
+A:admin@SR-30# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-30# show filter ip 1 counters | match Ing
+Ing. Matches        : 5849 pkts (1239988 bytes)
+
+[/]
+A:admin@SR-30# show router interface "to_SR-10-1" statistics | match "Mpls"
+MINOR: CLI #2005: Error while processing command - No such interface: to_SR-10-1.
+
+[/]
+A:admin@SR-30# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-31# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-31# environment more false
+
+[/]
+A:admin@SR-31# show version
+
+[/]
+A:admin@SR-31# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-31# show filter ip 1 counters | match Ing
+Ing. Matches        : 5775 pkts (1224300 bytes)
+
+[/]
+A:admin@SR-31# show router interface "to_SR-10-1" statistics | match "Mpls"
+MINOR: CLI #2005: Error while processing command - No such interface: to_SR-10-1.
+
+[/]
+A:admin@SR-31# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-32# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-32# environment more false
+
+[/]
+A:admin@SR-32# show version
+
+[/]
+A:admin@SR-32# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-32# show filter ip 1 counters | match Ing
+Ing. Matches        : 6002 pkts (1272424 bytes)
+
+[/]
+A:admin@SR-32# show router interface "to_SR-10-1" statistics | match "Mpls"
+MINOR: CLI #2005: Error while processing command - No such interface: to_SR-10-1.
+
+[/]
+A:admin@SR-32# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-33# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-33# environment more false
+
+[/]
+A:admin@SR-33# show version
+
+[/]
+A:admin@SR-33# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-33# show filter ip 1 counters | match Ing
+Ing. Matches        : 5997 pkts (1271364 bytes)
+
+[/]
+A:admin@SR-33# show router interface "to_SR-10-1" statistics | match "Mpls"
+MINOR: CLI #2005: Error while processing command - No such interface: to_SR-10-1.
+
+[/]
+A:admin@SR-33# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-34# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-34# environment more false
+
+[/]
+A:admin@SR-34# show version
+
+[/]
+A:admin@SR-34# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-34# show filter ip 1 counters | match Ing
+Ing. Matches        : 5782 pkts (1225784 bytes)
+
+[/]
+A:admin@SR-34# show router interface "to_SR-10-1" statistics | match "Mpls"
+MINOR: CLI #2005: Error while processing command - No such interface: to_SR-10-1.
+
+[/]
+A:admin@SR-34# 
+ SR OS Software
+ Copyright (c) Nokia 2021.  All Rights Reserved.
+ 
+ Trademarks
+ 
+ Nokia and the Nokia logo are registered trademarks of Nokia. All other
+ trademarks are the property of their respective owners.
+ 
+ IMPORTANT: READ CAREFULLY
+ 
+ The SR OS Software (the "Software") is proprietary to Nokia and is subject
+ to and governed by the terms and conditions of the End User License
+ Agreement accompanying the product, made available at the time of your order,
+ or posted on the Nokia website (collectively, the "EULA").  As set forth
+ more fully in the EULA, use of the Software is strictly limited to your 
+ internal use.  Downloading, installing, or using the Software constitutes
+ acceptance of the EULA and you are binding yourself and the business entity
+ that you represent to the EULA.  If you do not agree to all of the terms of
+ the EULA, then Nokia is unwilling to license the Software to you and (a) you
+ may not download, install or use the Software, and (b) you may return the
+ Software as more fully set forth in the EULA.
+ 
+ This product contains cryptographic features and is subject to United States 
+ and local country laws governing import, export, transfer and use. Delivery 
+ of Nokia cryptographic products does not imply third-party authority to 
+ import, export, distribute or use encryption.
+ 
+ If you require further assistance please contact us by sending an email
+ to support@nokia.com.
+
+
+[/]
+A:admin@SR-35# environment no more
+                           ^^
+MINOR: MGMT_CORE #2201: Unknown element - 'no'
+
+[/]
+A:admin@SR-35# environment more false
+
+[/]
+A:admin@SR-35# show version
+
+[/]
+A:admin@SR-35# show router mpls lsp-egress-stats | match expression "^LSP.*38.*|(.*Aggregate.*Pkts.*[1..9])"
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MINOR: MGMT_CORE #2203: Invalid element - quotes can only be used around values
+
+[/]
+A:admin@SR-35# show filter ip 1 counters | match Ing
+Ing. Matches        : 5946 pkts (1260552 bytes)
+
+[/]
+A:admin@SR-35# show router interface "to_SR-10-1" statistics | match "Mpls"
+MINOR: CLI #2005: Error while processing command - No such interface: to_SR-10-1.
+
+[/]
+A:admin@SR-35# 

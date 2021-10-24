@@ -1,0 +1,53 @@
+Linux debian31 5.10.0-9-amd64 #1 SMP Debian 5.10.70-1 (2021-09-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sat Oct 23 11:03:07 2021 from 192.168.0.8
+user@debian31:~$ who am i
+user     pts/0        2021-10-23 11:03 (192.168.0.8)
+user@debian31:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:0f:f5:9d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.31/24 brd 192.168.0.255 scope global dynamic enp0s3
+       valid_lft 81463sec preferred_lft 81463sec
+    inet6 fd50:720d:6d90:1:a00:27ff:fe0f:f59d/64 scope global dynamic mngtmpaddr 
+       valid_lft 604621sec preferred_lft 86221sec
+    inet6 fe80::a00:27ff:fe0f:f59d/64 scope link 
+       valid_lft forever preferred_lft forever
+user@debian31:~$ Linux debian32 5.10.0-9-amd64 #1 SMP Debian 5.10.70-1 (2021-09-30) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sat Oct 23 11:03:07 2021 from 192.168.0.8
+user@debian32:~$ who am i
+user     pts/0        2021-10-23 11:03 (192.168.0.8)
+user@debian32:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:c2:3f:d2 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.0.32/24 brd 192.168.0.255 scope global dynamic enp0s3
+       valid_lft 81142sec preferred_lft 81142sec
+    inet6 fd50:720d:6d90:1:a00:27ff:fec2:3fd2/64 scope global dynamic mngtmpaddr 
+       valid_lft 604621sec preferred_lft 86221sec
+    inet6 fe80::a00:27ff:fec2:3fd2/64 scope link 
+       valid_lft forever preferred_lft forever
+user@debian32:~$ 
